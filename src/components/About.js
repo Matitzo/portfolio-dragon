@@ -40,7 +40,7 @@ function About() {
         questions or if you would like to collaborate on a project.
       </StyledParagraph>
       <StyledLink
-        to={"/projects"}
+        to={"/portfolio-dragon/projects"}
         onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
       >
         <StyledButton>My projects</StyledButton>

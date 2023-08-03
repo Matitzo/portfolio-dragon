@@ -15,16 +15,20 @@ function Navbar() {
         <StyledButtonsWrapper>
           <ul>
             <li>
-              <StyledLink to={"/"}>Home</StyledLink>
+              <StyledLink to={"/portfolio-dragon"}>Home</StyledLink>
             </li>
             <li>
-              <StyledLink to={"/about"}>About</StyledLink>
+              <StyledLink to={"/portfolio-dragon/about"}>About</StyledLink>
             </li>
             <li>
-              <StyledLink to={"/experience"}>Experience</StyledLink>
+              <StyledLink to={"/portfolio-dragon/experience"}>
+                Experience
+              </StyledLink>
             </li>
             <li>
-              <StyledLink to={"/projects"}>Projects</StyledLink>
+              <StyledLink to={"/portfolio-dragon/projects"}>
+                Projects
+              </StyledLink>
             </li>
           </ul>
         </StyledButtonsWrapper>

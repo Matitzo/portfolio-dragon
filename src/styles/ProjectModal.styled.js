@@ -21,7 +21,7 @@ export const StyledProjectModalContainer = styled.div`
   );
   box-shadow: 0 2px 3px 0 #cc51d6, 0 0px 2px 0 #cc51d6;
   backdrop-filter: blur(20px);
-  translate: ${({ isVisible }) => !isVisible && "0px -104%"};
+  translate: ${({ isVisible }) => !isVisible && "0px calc(-120%)"};
   transition: 0.6s;
   overflow: hidden;
 `;

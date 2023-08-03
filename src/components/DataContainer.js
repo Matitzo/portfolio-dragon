@@ -19,10 +19,13 @@ function DataContainer({
     <StyledDataContainerDiv>
       <StyledDataContainerWrapper>
         <Routes>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/experience" element={<Experience />}></Route>
+          <Route path="/portfolio-dragon/about" element={<About />}></Route>
           <Route
-            path="/projects"
+            path="/portfolio-dragon/experience"
+            element={<Experience />}
+          ></Route>
+          <Route
+            path="/portfolio-dragon/projects"
             element={
               <MyProjects
                 setIsProjectModalVisible={setIsProjectModalVisible}
@@ -32,7 +35,7 @@ function DataContainer({
               />
             }
           ></Route>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/portfolio-dragon" element={<Home />}></Route>
         </Routes>
       </StyledDataContainerWrapper>
     </StyledDataContainerDiv>
