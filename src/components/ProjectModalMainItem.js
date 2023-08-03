@@ -9,7 +9,11 @@ import {
 function ProjectModalMainItem({ projectId }) {
   return (
     <StyledProjectModalItemWrapper>
-      <StyledProjectModalImageImg src={projectsData[projectId].mainImg} />
+      <StyledProjectModalImageImg
+        src={projectsData[projectId].mainImg}
+        alt="Image of main site of this project."
+        loading="lazy"
+      />
       <StyledProjectModalParagraph>
         {projectsData[projectId].mainDesc}
       </StyledProjectModalParagraph>

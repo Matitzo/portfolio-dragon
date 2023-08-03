@@ -12,6 +12,8 @@ function ProjectModalItem({ projectId, pageIndex }) {
     <StyledProjectModalItemWrapper>
       <StyledProjectModalImageImg
         src={projectsData[projectId].pages[pageIndex].img}
+        alt="Image of another route."
+        loading="lazy"
       />
       <StyledProjectModalUl>
         {projectsData[projectId].pages[pageIndex].descList.map((bullet) => (
