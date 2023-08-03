@@ -5,7 +5,7 @@ import dragonImg from "../images/dragon.jpg";
 function ImgContainer() {
   return (
     <StyledImgContainer>
-      <StyledImg src={dragonImg} />
+      <StyledImg src={dragonImg} alt="Image of dragon" />
     </StyledImgContainer>
   );
 }
