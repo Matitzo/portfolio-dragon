@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-dragon/static/css/main.b812bd99.css",
-    "main.js": "/portfolio-dragon/static/js/main.b6a30a25.js",
+    "main.js": "/portfolio-dragon/static/js/main.4a9aa8f8.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio-dragon/static/js/787.1ed0c42c.chunk.js",
     "static/media/unusual-places-in-the-world.png": "/portfolio-dragon/static/media/unusual-places-in-the-world.7d44dbaa27bf9c26f2e3.png",
     "static/media/smart-edukacja.png": "/portfolio-dragon/static/media/smart-edukacja.0fab7c11be957e2447f9.png",
@@ -19,11 +19,11 @@
     "static/media/polygon.png": "/portfolio-dragon/static/media/polygon.5222f49a30257a44b13c.png",
     "index.html": "/portfolio-dragon/index.html",
     "main.b812bd99.css.map": "/portfolio-dragon/static/css/main.b812bd99.css.map",
-    "main.b6a30a25.js.map": "/portfolio-dragon/static/js/main.b6a30a25.js.map",
+    "main.4a9aa8f8.js.map": "/portfolio-dragon/static/js/main.4a9aa8f8.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio-dragon/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b812bd99.css",
-    "static/js/main.b6a30a25.js"
+    "static/js/main.4a9aa8f8.js"
   ]
 }
