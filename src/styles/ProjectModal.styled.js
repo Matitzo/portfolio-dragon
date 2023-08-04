@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const StyledProjectModalContainer = styled.div`
   position: fixed;
-  top: 2em;
+  top: 50%;
   left: 5em;
-  z-index: 20px;
+  z-index: 999;
   padding: 0.5rem;
   color: white;
   width: calc(60% - 11rem);
@@ -21,9 +21,47 @@ export const StyledProjectModalContainer = styled.div`
   );
   box-shadow: 0 2px 3px 0 #cc51d6, 0 0px 2px 0 #cc51d6;
   backdrop-filter: blur(20px);
-  translate: ${({ isVisible }) => !isVisible && "0px calc(-120%)"};
+  translate: ${({ isVisible }) =>
+    !isVisible ? "0px calc(-200%)" : "0px calc(-50%)"};
   transition: 0.6s;
   overflow: hidden;
+
+  @media (min-width: 2000px) {
+    translate: ${({ isVisible }) =>
+      !isVisible ? "0px calc(-300%)" : "0px calc(-50%)"};
+  }
+
+  @media (max-width: 900px) {
+    width: calc(100% - 15rem);
+    left: 7em;
+    translate: ${({ isVisible }) =>
+      !isVisible ? "0px calc(-200%)" : "0px calc(-50%)"};
+  }
+
+  @media (max-width: 650px) {
+    width: calc(100% - 5rem);
+    left: 2em;
+  }
+
+  @media (max-width: 450px) {
+    width: calc(100% - 3rem);
+    left: 1em;
+  }
+
+  @media (min-height: 1000px) {
+    translate: ${({ isVisible }) =>
+      !isVisible ? "0px calc(-300%)" : "0px calc(-50%)"};
+  }
+
+  @media (max-height: 610px) {
+    position: absolute;
+    top: 70%;
+  }
+
+  @media (max-height: 500px) {
+    top: 20em;
+    translate: ${({ isVisible }) => !isVisible && "0px calc(-200%)"};
+  }
 `;
 
 export const StyledProjectModalDataWrapper = styled.div`
@@ -43,11 +81,19 @@ export const StyledProjectModalDataWrapper = styled.div`
 
 export const StyledProjectModalHeaderH2 = styled.h2`
   margin: 0 0.5rem 0.5rem 0.5rem;
+
+  @media (max-width: 1100px) {
+    font-size: 1.3rem;
+  }
 `;
 
 export const StyledProjectModalParagraph = styled.p`
   margin: 0.5rem;
   line-height: 1.5;
+
+  @media (max-width: 1100px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const StyledProjectModalImageImg = styled.img`
@@ -77,6 +123,10 @@ export const StyledProjectModalPaginationDiv = styled.div`
     display: flex;
     gap: 0.5em;
   }
+
+  @media (max-width: 900px) {
+    gap: 2em;
+  }
 `;
 
 export const StyledProjectModalUl = styled.ul`
@@ -95,5 +145,9 @@ export const StyledProjectModalUl = styled.ul`
     left: -1em;
     top: 1.2em;
     position: relative;
+  }
+
+  @media (max-width: 1100px) {
+    font-size: 0.9rem;
   }
 `;

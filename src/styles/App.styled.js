@@ -6,8 +6,11 @@ export const StyledWrapperAbsolute = styled.div`
   right: 0;
   width: 40%;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
+  }
+
+  @media (max-width: 900px) {
     width: 100%;
-    height: fit-content;
+    height: calc(200vh - 100px);
   }
 `;

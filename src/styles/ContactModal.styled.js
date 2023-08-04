@@ -8,7 +8,7 @@ export const StyledModalContainer = styled.div`
   padding-bottom: 1em;
   width: 350px;
   height: 250px;
-  z-index: 10;
+  z-index: 9999;
   border-radius: 0px 20px 0px 0px;
   background: var(
     --bottomleftmenu-notification,
@@ -25,6 +25,13 @@ export const StyledModalContainer = styled.div`
   box-shadow: 4px -4px 3px #cc51d6;
   translate: ${({ isVisible }) => !isVisible && "-340px 0px"};
   transition: 1s;
+
+  @media (max-width: 550px) {
+    font-size: 0.9rem;
+    width: 300px;
+    height: 196px;
+    translate: ${({ isVisible }) => !isVisible && "-290px 0px"};
+  }
 `;
 
 export const StyledUl = styled.ul`
@@ -51,6 +58,14 @@ export const StyledUl = styled.ul`
     span {
       margin-left: -16px;
     }
+
+    @media (max-width: 550px) {
+      i {
+        position: relative;
+        left: -42px;
+        top: 2px;
+      }
+    }
   }
 `;
 
@@ -64,4 +79,9 @@ export const StyledPolygonImg = styled.img`
   );
   filter: drop-shadow(0px 0px 30px #763db0);
   object-fit: fill;
+
+  @media (max-width: 550px) {
+    width: 70px;
+    height: 70px;
+  }
 `;

@@ -22,16 +22,32 @@ export const StyledGlobalHeader = styled.h1`
   span {
     color: #cc51d6;
   }
+
+  @media (max-width: 1100px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 1.6rem;
+  }
 `;
 
 export const StyledHomeHeader = styled(StyledGlobalHeader)`
   font-size: 2.5rem;
   margin-top: 2em;
+
+  @media (max-width: 550px) {
+    font-size: 2rem;
+  }
 `;
 
-export const StyledGlobalHeaderH4 = styled.h2`
+export const StyledGlobalHeaderH2 = styled.h2`
   font-size: 2rem;
   margin-top: 1em;
+
+  @media (max-width: 550px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const StyledParagraph = styled.p`
@@ -41,6 +57,10 @@ export const StyledParagraph = styled.p`
   span {
     color: #cc51d6;
     font-weight: bold;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 0.9rem;
   }
 `;
 
@@ -112,5 +132,9 @@ export const StyledGlobalLi = styled.li`
 
   span {
     margin-left: 0.5em;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 0.9rem;
   }
 `;

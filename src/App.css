@@ -1,6 +1,8 @@
 .app {
   width: 100%;
   height: 150vh;
-  height: fit-content;
-  background-color: #1b3351;
+  background-color: #0f1d2f;
+  /* #0f1d2f #1b3351*/
+  @media (max-width: 900px) {
+  }
 }

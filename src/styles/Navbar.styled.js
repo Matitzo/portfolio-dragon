@@ -43,6 +43,10 @@ export const StyledArrow = styled.div`
     background-color: #3d0043;
     filter: blur(1px);
   }
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 export const StyledNavbarContainer = styled.div`
@@ -70,6 +74,10 @@ export const StyledNavbarContainer = styled.div`
     );
     filter: blur(1px);
   }
+
+  @media (max-width: 900px) {
+    justify-content: end;
+  }
 `;
 
 export const StyledButtonsWrapper = styled.div`
@@ -80,7 +88,7 @@ export const StyledButtonsWrapper = styled.div`
   ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -91,6 +99,29 @@ export const StyledButtonsWrapper = styled.div`
       &:hover {
         scale: 1.15;
       }
+    }
+  }
+
+  @media (max-width: 900px) {
+    align-items: start;
+    width: 50%;
+    min-width: 350px;
+    padding-right: 2rem;
+
+    ul {
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 550px) {
+    align-items: start;
+    width: 100%;
+    min-width: 0;
+    padding-left: 2rem;
+
+    ul {
+      justify-content: space-between;
+      gap: 1em;
     }
   }
 `;

@@ -19,6 +19,7 @@ function Experience() {
               color: "#cc51d6",
               fontSize: "2.5em",
               borderRadius: "6px",
+              minWidth: "28px",
             }}
           />
         }
@@ -45,6 +46,7 @@ function Experience() {
               color: "#cc51d6",
               fontSize: "2.5em",
               borderRadius: "6px",
+              minWidth: "28px",
             }}
           />
         }
@@ -73,6 +75,7 @@ function Experience() {
               color: "#cc51d6",
               fontSize: "2.5em",
               borderRadius: "6px",
+              minWidth: "28px",
             }}
           />
         }

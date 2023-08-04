@@ -8,8 +8,12 @@ export const StyledImgContainer = styled.div`
   // background-size: contain;
   // background-repeat: no-repeat;
 
-  @media (max-width: 968px) {
+  @media (max-width: 1100px) {
+  }
+
+  @media (max-width: 900px) {
     width: 100%;
+    height: 200vh;
   }
 `;
 

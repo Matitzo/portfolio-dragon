@@ -7,7 +7,7 @@ import {
   StyledButton,
   StyledGlobalUl,
   StyledGlobalLi,
-  StyledGlobalHeaderH4,
+  StyledGlobalHeaderH2,
 } from "../styles/GlobalStyling.styled";
 import { StyledLink } from "../styles/Link.styled";
 import {
@@ -39,7 +39,7 @@ function Home() {
           I specialize in front-end development using <span>React.js</span>,
           creating good looking and responsive user interfaces.
         </StyledParagraph>
-        <StyledGlobalHeaderH4>Skills:</StyledGlobalHeaderH4>
+        <StyledGlobalHeaderH2>Skills:</StyledGlobalHeaderH2>
         <StyledGlobalUl>
           <StyledGlobalLi>
             <div>

@@ -32,6 +32,28 @@ export const StyledHeaderFlexWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  h2 {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 1100px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 export const StyledUpperDivData = styled.div`
@@ -60,6 +82,24 @@ export const StyledLowerDiv = styled.div`
       position: relative;
     }
   }
+
+  @media (max-width: 1100px) {
+    ul {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    ul {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    ul {
+      font-size: 0.9rem;
+    }
+  }
 `;
 
 export const StyledLowerDivTechnologiesContainer = styled.div`
@@ -75,6 +115,18 @@ export const StyledTechContainer = styled.div`
   padding: 0 0.5em;
   font-size: 0.9rem;
   font-weight: bold;
+
+  @media (max-width: 1100px) {
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const StyledImgContainer = styled.div`
@@ -87,8 +139,32 @@ export const StyledImgContainer = styled.div`
 
 export const StyledCardParagraphNoMargin = styled.p`
   margin: 0;
+
+  @media (max-width: 1100px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const StyledCardParagraphWithMargin = styled.p`
   margin: 0.5em 0 0 0;
+
+  @media (max-width: 1100px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 0.9rem;
+  }
 `;
