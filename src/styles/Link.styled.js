@@ -5,5 +5,5 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   display: flex;
   width: fit-content;
-  color: white;
+  color: inherit;
 `;

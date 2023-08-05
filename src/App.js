@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import ImgContainer from "./components/ImgContainer";
 import Navbar from "./components/Navbar";
+import NavbarModal from "./components/NavbarModal";
 import DataContainer from "./components/DataContainer";
 import ContactData from "./components/ContactData";
 import ProjectModal from "./components/ProjectModal";
@@ -16,11 +17,16 @@ function App() {
   const [isVisible, setIsVisible] = React.useState(true);
   const [activeIndex, SetActiveIndex] = React.useState(0);
   const [projectId, setProjectId] = React.useState(0);
+  const [isModalVisible, setIsModalVisible] = React.useState(false);
 
   return (
     <div className="app">
       <Router>
         <Logo />
+        <NavbarModal
+          isModalVisible={isModalVisible}
+          setIsModalVisible={(value) => setIsModalVisible(false)}
+        />
         <ImgContainer />
         <ProjectModal
           isProjectModalVisible={isProjectModalVisible}
@@ -34,7 +40,10 @@ function App() {
           setIsVisible={(value) => setIsVisible(value)}
         />
         <StyledWrapperAbsolute>
-          <Navbar />
+          <Navbar
+            isModalVisible={isModalVisible}
+            setIsModalVisible={(value) => setIsModalVisible(value)}
+          />
           <DataContainer
             setIsProjectModalVisible={(value) =>
               setIsProjectModalVisible(value)

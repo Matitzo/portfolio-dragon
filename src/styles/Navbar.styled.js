@@ -12,7 +12,7 @@ export const StyledArrow = styled.div`
   top: 12.8px;
   left: -37px;
   transform: rotate(-135deg);
-  z-index: 999;
+  z-index: 1001;
 
   &::before {
     position: absolute;
@@ -124,4 +124,11 @@ export const StyledButtonsWrapper = styled.div`
       gap: 1em;
     }
   }
+`;
+
+export const StyledHamburgerContainer = styled.div`
+  margin-right: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

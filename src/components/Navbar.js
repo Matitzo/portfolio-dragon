@@ -1,38 +1,43 @@
 import React from "react";
-import { StyledLink } from "../styles/Link.styled";
+import NavbarButtonsContainer from "./NavbarButtonsContainer";
+import NavbarHamburgerButton from "./NavbarHamburgerButton";
 import {
   StyledNavbarContainer,
-  StyledButtonsWrapper,
   StyledArrow,
   StyledNavbarWrapper,
 } from "../styles/Navbar.styled";
 
-function Navbar() {
+function Navbar({ isModalVisible, setIsModalVisible }) {
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  function handleNavbar() {
+    windowWidth > "570" && setIsModalVisible(false);
+    return windowWidth > "570" ? (
+      <NavbarButtonsContainer />
+    ) : (
+      <NavbarHamburgerButton
+        isModalVisible={isModalVisible}
+        setIsModalVisible={(value) => setIsModalVisible(value)}
+      />
+    );
+  }
+
   return (
     <StyledNavbarWrapper>
       <StyledArrow />
-      <StyledNavbarContainer>
-        <StyledButtonsWrapper>
-          <ul>
-            <li>
-              <StyledLink to={"/portfolio-dragon"}>Home</StyledLink>
-            </li>
-            <li>
-              <StyledLink to={"/portfolio-dragon/about"}>About</StyledLink>
-            </li>
-            <li>
-              <StyledLink to={"/portfolio-dragon/experience"}>
-                Experience
-              </StyledLink>
-            </li>
-            <li>
-              <StyledLink to={"/portfolio-dragon/projects"}>
-                Projects
-              </StyledLink>
-            </li>
-          </ul>
-        </StyledButtonsWrapper>
-      </StyledNavbarContainer>
+      <StyledNavbarContainer>{handleNavbar()}</StyledNavbarContainer>
     </StyledNavbarWrapper>
   );
 }

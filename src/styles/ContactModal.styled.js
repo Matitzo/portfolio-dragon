@@ -8,7 +8,7 @@ export const StyledModalContainer = styled.div`
   padding-bottom: 1em;
   width: 350px;
   height: 250px;
-  z-index: 9999;
+  z-index: 999;
   border-radius: 0px 20px 0px 0px;
   background: var(
     --bottomleftmenu-notification,
