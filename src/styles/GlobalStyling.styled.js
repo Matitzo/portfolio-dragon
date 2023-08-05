@@ -138,3 +138,7 @@ export const StyledGlobalLi = styled.li`
     font-size: 0.9rem;
   }
 `;
+
+export const StyledButtonWithUnderline = styled.div`
+  color: white;
+`;

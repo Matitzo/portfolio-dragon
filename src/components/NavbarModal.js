@@ -9,7 +9,7 @@ import {
   StyledNavbarModalWrapper,
 } from "../styles/NavbarModal.styled";
 import { AiOutlineHome, AiOutlineCloseCircle } from "react-icons/ai";
-import { GrProjects } from "react-icons/gr";
+import { MdWebAsset } from "react-icons/md";
 import { BsPersonWorkspace, BsFillPersonFill } from "react-icons/bs";
 import { StyledLink } from "../styles/Link.styled";
 
@@ -28,12 +28,12 @@ function NavbarModal({ isModalVisible, setIsModalVisible }) {
                 <StyledNavbarModalHeader>MENU</StyledNavbarModalHeader>
                 <AiOutlineCloseCircle
                   onClick={() => setIsModalVisible(false)}
-                  style={{ width: "30px", height: "30px", cursor: "pointer" }}
+                  style={{ width: "35px", height: "35px", cursor: "pointer" }}
                 />
               </StyledNavbarModalHeaderWrapper>
               <IconContext.Provider
                 value={{
-                  size: "1.4rem",
+                  size: "1.5rem",
                 }}
               >
                 <StyledNavbarModalUl>
@@ -76,7 +76,7 @@ function NavbarModal({ isModalVisible, setIsModalVisible }) {
                       onClick={() => setIsModalVisible(false)}
                     >
                       <div>
-                        <GrProjects />
+                        <MdWebAsset />
                       </div>
                       <span>Projects</span>
                     </StyledLink>

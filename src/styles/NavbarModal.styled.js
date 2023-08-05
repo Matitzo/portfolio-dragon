@@ -10,10 +10,16 @@ export const StyledNavbarModalContainer = styled.div`
 `;
 
 export const StyledNavbarModalWrapper = styled.div`
-  background-color: white;
+  background: rgb(15, 61, 111);
+  background: linear-gradient(
+    315deg,
+    rgba(15, 61, 111, 1) 1%,
+    rgba(87, 2, 93, 1) 71%
+  );
   padding: 2em;
   width: calc(100% - 4em);
   height: 100vh;
+  color: white;
 `;
 
 export const StyledNavbarModalHeaderWrapper = styled.div`
@@ -24,17 +30,18 @@ export const StyledNavbarModalHeaderWrapper = styled.div`
   width: 100%;
 `;
 
-export const StyledNavbarModalHeader = styled.h2``;
+export const StyledNavbarModalHeader = styled.h2`
+  font-size: 2rem;
+`;
 
 export const StyledNavbarModalUl = styled.ul`
-  color: black;
   list-style-type: none;
   padding: 0;
   margin: 2em 0;
 
   li {
-    font-size: 1.2rem;
-    margin: 1.2em 0;
+    font-size: 1.5rem;
+    margin: 1.8em 0;
     display: flex;
 
     div {
