@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import DataContainer from "./components/DataContainer";
 import ContactData from "./components/ContactData";
 import ProjectModal from "./components/ProjectModal";
+import Logo from "./components/Logo";
 import { StyledWrapperAbsolute } from "./styles/App.styled";
 import ContactModal from "./components/ContactModal";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="app">
       <Router>
+        <Logo />
         <ImgContainer />
         <ProjectModal
           isProjectModalVisible={isProjectModalVisible}

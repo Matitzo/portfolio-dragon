@@ -6,7 +6,8 @@ export const StyledWrapperAbsolute = styled.div`
   right: 0;
   width: 40%;
 
-  @media (max-width: 1100px) {
+  @media (min-width: 1700px) {
+    width: 30%;
   }
 
   @media (max-width: 900px) {
