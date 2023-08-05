@@ -32,6 +32,10 @@ export const StyledNavbarModalHeaderWrapper = styled.div`
 
 export const StyledNavbarModalHeader = styled.h2`
   font-size: 2rem;
+
+  @media (max-height: 480px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const StyledNavbarModalUl = styled.ul`
@@ -52,6 +56,10 @@ export const StyledNavbarModalUl = styled.ul`
 
     span {
       margin-left: 0.5em;
+    }
+
+    @media (max-height: 480px) {
+      font-size: 1rem;
     }
   }
 `;
