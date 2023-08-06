@@ -79,7 +79,7 @@ function Experience() {
             }}
           />
         }
-        company={"Bachelor of science: Geodesy & Cartography"}
+        company={"Bachelor of Engineering: Geodesy & Cartography"}
         jobPosition={"University of Warmia and Mazury in Olsztyn"}
         date={"Oct'18 - Feb'22"}
         desc={[
