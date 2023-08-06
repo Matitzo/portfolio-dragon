@@ -1,5 +1,35 @@
 import styled from "styled-components";
 
+export const StyledDataContainderDivWrapper = styled.div`
+  &::before {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    content: "";
+    width: 2px;
+    height: calc(100% - 100px);
+    background-image: linear-gradient(
+      to bottom,
+      #3d0043,
+      #5e1265,
+      #812789,
+      #a63caf,
+      #cc51d6
+    );
+    filter: blur(1px);
+    z-index: 1002;
+  }
+
+  @media (max-width: 900px) {
+    height: calc(200vh - 100px);
+
+    &::before {
+      width: 0;
+      height: 0;
+    }
+  }
+`;
+
 export const StyledDataContainerDiv = styled.div`
   width: 100%;
   backdrop-filter: blur(100px);
@@ -33,24 +63,6 @@ export const StyledDataContainerWrapper = styled.div`
   min-height: calc(150vh - 101.6px);
   height: fit-content;
   max-height: 150vh;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 2px;
-    height: 100%;
-    background-image: linear-gradient(
-      to bottom,
-      #3d0043,
-      #5e1265,
-      #812789,
-      #a63caf,
-      #cc51d6
-    );
-    filter: blur(1px);
-  }
 
   @media (max-width: 900px) {
     width: 100%;

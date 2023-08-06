@@ -7,6 +7,7 @@ import MyProjects from "./MyProjects";
 import {
   StyledDataContainerDiv,
   StyledDataContainerWrapper,
+  StyledDataContainderDivWrapper,
 } from "../styles/DataContainer.styled";
 
 function DataContainer({
@@ -16,29 +17,31 @@ function DataContainer({
   setIsVisible,
 }) {
   return (
-    <StyledDataContainerDiv>
-      <StyledDataContainerWrapper>
-        <Routes>
-          <Route path="/portfolio-dragon/about" element={<About />}></Route>
-          <Route
-            path="/portfolio-dragon/experience"
-            element={<Experience />}
-          ></Route>
-          <Route
-            path="/portfolio-dragon/projects"
-            element={
-              <MyProjects
-                setIsProjectModalVisible={setIsProjectModalVisible}
-                setProjectId={setProjectId}
-                SetActiveIndex={SetActiveIndex}
-                setIsVisible={(value) => setIsVisible(value)}
-              />
-            }
-          ></Route>
-          <Route path="/portfolio-dragon" element={<Home />}></Route>
-        </Routes>
-      </StyledDataContainerWrapper>
-    </StyledDataContainerDiv>
+    <StyledDataContainderDivWrapper>
+      <StyledDataContainerDiv>
+        <StyledDataContainerWrapper>
+          <Routes>
+            <Route path="/portfolio-dragon/about" element={<About />}></Route>
+            <Route
+              path="/portfolio-dragon/experience"
+              element={<Experience />}
+            ></Route>
+            <Route
+              path="/portfolio-dragon/projects"
+              element={
+                <MyProjects
+                  setIsProjectModalVisible={setIsProjectModalVisible}
+                  setProjectId={setProjectId}
+                  SetActiveIndex={SetActiveIndex}
+                  setIsVisible={(value) => setIsVisible(value)}
+                />
+              }
+            ></Route>
+            <Route path="/portfolio-dragon" element={<Home />}></Route>
+          </Routes>
+        </StyledDataContainerWrapper>
+      </StyledDataContainerDiv>
+    </StyledDataContainderDivWrapper>
   );
 }
 
