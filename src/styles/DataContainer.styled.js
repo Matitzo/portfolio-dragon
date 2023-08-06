@@ -21,7 +21,7 @@ export const StyledDataContainderDivWrapper = styled.div`
   }
 
   @media (max-width: 900px) {
-    height: calc(200vh - 100px);
+    height: calc(100vh - 100px);
 
     &::before {
       width: 0;
@@ -53,7 +53,7 @@ export const StyledDataContainerDiv = styled.div`
 
   @media (max-width: 900px) {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 100px);
     max-height: none;
   }
 `;

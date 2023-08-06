@@ -53,15 +53,17 @@ export const StyledProjectModalContainer = styled.div`
       !isVisible ? "0px calc(-300%)" : "0px calc(-50%)"};
   }
 
-  @media (max-height: 610px) {
+  @media (max-height: 620px) {
     position: absolute;
-    top: 70%;
+    top: 50%;
+    height: 70vh;
+    overflow-y: auto;
   }
 
-  @media (max-height: 500px) {
-    top: 20em;
-    translate: ${({ isVisible }) => !isVisible && "0px calc(-200%)"};
-  }
+  // @media (max-height: 500px) {
+  //   top: 20em;
+  //   translate: ${({ isVisible }) => !isVisible && "0px calc(-200%)"};
+  // }
 `;
 
 export const StyledProjectModalDataWrapper = styled.div`

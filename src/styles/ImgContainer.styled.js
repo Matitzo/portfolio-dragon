@@ -10,7 +10,7 @@ export const StyledImgContainer = styled.div`
 
   @media (max-width: 900px) {
     width: 100%;
-    height: 200vh;
+    height: 100vh;
   }
 `;
 

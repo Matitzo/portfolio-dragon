@@ -12,6 +12,6 @@ export const StyledWrapperAbsolute = styled.div`
 
   @media (max-width: 900px) {
     width: 100%;
-    height: calc(200vh - 100px);
+    height: 100vh;
   }
 `;
