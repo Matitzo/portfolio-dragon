@@ -15,8 +15,8 @@ export const projectsData = [
   {
     title: "SmartEdukacja.pl",
     mainImg: smartEdukacjaImg,
-    mainDesc:
-      "SmartEdukacja is my biggest project so far. It is a portal that allows you to post tutoring ads and allows you to view and browse them using a map. It allows you to create an account, create new ads, delete and edit existing ones, and of course to filter them. For the site, I also created a database using MySQL and backend using Node.js and Express. I am still working on the site improving the code and adding new features. (Ads can take a while to load because I use a free plan to host my api, which is automatically spun down after 15 minutes of inactivity.)",
+    mainDesc: `SmartEdukacja is my biggest project so far. It is a portal that allows you to post tutoring ads and allows you to view and browse them using a map. It allows you to create an account, create new ads, delete and edit existing ones, and of course to filter them. For the site, I also created a database using MySQL and backend using Node.js and Express. I am still working on the site improving the code and adding new features. 
+      (IMPORTANT: Ads can take a while to load because I use a free plan to host my api, which is automatically spun down after 15 minutes of inactivity.)`,
     pageLink: "https://matitzo.github.io/tutoring-on-map/",
     gitHubLink: "",
     pages: [
