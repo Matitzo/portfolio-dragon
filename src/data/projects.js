@@ -50,7 +50,7 @@ export const projectsData = [
         img: smartEdukacjaImgCreateAds,
         descList: [
           "Create you announcement.",
-          "Enter the details for the announcement in the form.",
+          "Enter details for the announcement in the form (form validation included).",
           "Choose locations using map.",
           "Change address if it doesn't suit you.",
           "Add description using Microsoft Word like app.",
