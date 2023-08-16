@@ -7,6 +7,10 @@ export const StyledLogoImg = styled.img`
   width: 140px;
   z-index: 100;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @media (max-width: 900px) {
     left: 2em;
   }
